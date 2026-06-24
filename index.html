@@ -3,14 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>3 squares</title>
+    <title>Bikash Ahir | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Bikash<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
     <main>
-    <div id="box1"><h4>box1</h4></div>
-    <div id="box2"><h4>box2</h4></div>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content fade-in">
+                    <p class="greeting">Hi there, I'm</p>
+                    <h1 class="name">Bikash Ahir</h1>
+                    <h2 class="role">BCA Student & Developer</h2>
+                    <p class="description">Passionate about building responsive, modern, and beautiful web applications.</p>
+                    <div class="hero-btns">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                    </div>
+                </div>
+                <div class="hero-image slide-in-right">
+                    <div class="blob-shape">
+                        <!-- Placeholder for a profile image, using a creative CSS shape for now -->
+                        <div class="profile-placeholder"><i class="fa-solid fa-code"></i></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about section">
+            <div class="container">
+                <h2 class="section-title reveal">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text reveal">
+                        <p>Hello! My name is Bikash Ahir. I am currently pursuing my BCA degree and have a deep passion for web development. I enjoy bringing ideas to life in the browser and crafting intuitive user experiences.</p>
+                        <p>My journey in coding started with curiosity about how websites work, which quickly turned into a dedicated pursuit of creating full-fledged web applications.</p>
+                    </div>
+                    <div class="about-stats reveal">
+                        <div class="stat-box">
+                            <h3>BCA</h3>
+                            <p>Student</p>
+                        </div>
+                        <div class="stat-box">
+                            <h3>Web Dev</h3>
+                            <p>Enthusiast</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills section bg-darker">
+            <div class="container">
+                <h2 class="section-title reveal">My Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card reveal" style="--delay: 0.1s">
+                        <i class="fa-brands fa-html5 skill-icon" style="color: #E34F26;"></i>
+                        <h3>HTML</h3>
+                    </div>
+                    <div class="skill-card reveal" style="--delay: 0.2s">
+                        <i class="fa-brands fa-css3-alt skill-icon" style="color: #1572B6;"></i>
+                        <h3>CSS</h3>
+                    </div>
+                    <div class="skill-card reveal" style="--delay: 0.3s">
+                        <i class="fa-brands fa-js skill-icon" style="color: #F7DF1E;"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skill-card reveal" style="--delay: 0.4s">
+                        <i class="fa-brands fa-php skill-icon" style="color: #777BB4;"></i>
+                        <h3>PHP</h3>
+                    </div>
+                    <div class="skill-card reveal" style="--delay: 0.5s">
+                        <i class="fa-solid fa-database skill-icon" style="color: #4479A1;"></i>
+                        <h3>MySQL</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects section">
+            <div class="container">
+                <h2 class="section-title reveal">Projects</h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card reveal">
+                        <div class="project-img">
+                            <div class="img-placeholder">Project 1</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>E-commerce Website</h3>
+                            <p>A full-stack e-commerce solution with product catalog, cart, and user authentication.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>PHP</span>
+                                <span>MySQL</span>
+                            </div>
+                            <a href="#" class="project-link">View Project <i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <!-- Project 2 -->
+                    <div class="project-card reveal" style="--delay: 0.2s">
+                        <div class="project-img">
+                            <div class="img-placeholder">Project 2</div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Interactive Portfolio</h3>
+                            <p>A responsive and modern portfolio website showcasing my skills and projects with sleek animations.</p>
+                            <div class="project-tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <a href="https://github.com/bikashahir357-oss/Portfolio-Website" class="project-link" target="_blank" rel="noopener noreferrer">View on GitHub <i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact section bg-darker">
+            <div class="container">
+                <h2 class="section-title reveal">Get In Touch</h2>
+                <div class="contact-container reveal">
+                    <div class="contact-info">
+                        <h3>Let's talk about everything!</h3>
+                        <p>Feel free to reach out for collaborations or just a friendly hello.</p>
+                        <div class="info-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>bikash.ahir@example.com</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <span>Location, India</span>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/bikashahir357-oss" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
-    <div id="box3"><h4>box3</h4></div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Bikash Ahir. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
